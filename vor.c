@@ -77,7 +77,7 @@ int main(int argc,char **argv) {
                 break;
             case 'c':
                 cflag=1;
-                min_col_diff = atoi(optarg);
+                min_col_diff = atof(optarg);
                 break;
             default:
                 printf("Option %s not recognized and ignored.\n",c);
