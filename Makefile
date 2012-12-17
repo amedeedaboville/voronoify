@@ -1,2 +1,2 @@
 voronoify: vor.c
-	gcc -o vor vor.c `MagickWand-config --cflags --cppflags` `MagickWand-config --ldflags --libs` libkdtree.a
+	gcc -g -o vor vor.c `MagickWand-config --cflags --cppflags` `MagickWand-config --ldflags --libs` libkdtree.a
