@@ -1,15 +1,15 @@
 voronoify
 =========
 
-A voronoi filter for images
+A voronoi filter for images, available for Linux in C (needs porting for osx) or a platform independent version in python.
 
 Fast version (in C)
 =========
 ####Dependencies 
-`$sudo apt-get install libmagickwand-dev`
+`sudo apt-get install libmagickwand-dev`
 
 ###Compiling 
-`$make vor`
+`make vor`
 
 ###Syntax
 `$./vor -s source_name -d destination-name [-n num_cells|-r random_seed| -c min_diff]
@@ -23,14 +23,19 @@ Fast version (in C)
 
 ###Note: 
 Probably needs tweaking for windows, though works fine on Ubuntu 12.04 and 12.10.
-Python version
+
+Platform independent version (Python)
 =======
 ###Dependencies 
 * PIL
 * Scipy
 both can be acquired through pip. 
+
 ###Usage  
-create an image object with  
+import:
+`from import python_vor import generate_voronoi`
+`from PIL import Image`
+Then create an image object with
 `source = Image.open(source_filename)`  
 then call  
-`generate_voronoi_diagram(source, num_cells)`  
+`generate_voronoi(source, num_cells)`  
