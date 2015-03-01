@@ -29,13 +29,16 @@ Platform independent version (Python)
 ###Dependencies 
 * PIL
 * Scipy
+
 both can be acquired through pip. 
 
 ###Usage  
 import:
-`from import python_vor import generate_voronoi`
-`from PIL import Image`
+
+`from import python_vor import generate_voronoi
+from PIL import Image`
 Then create an image object with
+
 `source = Image.open(source_filename)`  
 then call  
 `generate_voronoi(source, num_cells)`  
