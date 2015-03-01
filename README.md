@@ -36,6 +36,7 @@ both can be acquired through pip.
 import:
 
 `from import python_vor import generate_voronoi`
+
 `from PIL import Image`
 
 Then create an image object with
