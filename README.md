@@ -13,7 +13,7 @@ I've included a version of libkdtree.a which works on i386 architectures. You ma
 `make vor`
 
 ### Syntax
-`$./vor -s source_name -d destination-name [-n num_cells|-r random_seed| -c min_diff]
+`$./vor -s source_name -d destination-name [-n num_cells|-r random_seed| -c min_diff]`
 
 -s source_name: name of file you want to voronoify. default is lisa.png  
 -d destination_name: what to save the file as. Default is $num_cells-$source_name  
@@ -34,13 +34,10 @@ both can be acquired through pip.
 
 ### Usage  
 import:
+```
+from python_vor import generate_voronoi
+from PIL import Image
 
-`from import python_vor import generate_voronoi`
-
-`from PIL import Image`
-
-Then create an image object with
-
-`source = Image.open(source_filename)`  
-then call  
-`generate_voronoi(source, num_cells)`  
+source = Image.open(source_filename)
+generate_voronoi(source, num_cells)
+```
